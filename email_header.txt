@@ -1,0 +1,35 @@
+Return-Path: <no-reply@amer-verify.com>
+Delivered-To: user@example.com
+Received: from mail-relay-3.hostingprovider.net (mail-relay-3.hostingprovider.net [45.77.88.12])
+        by mx.yourmail.com (Postfix) with ESMTP id 4F2C81234
+        for <user@example.com>; Wed, 24 Sep 2025 09:12:03 +0000 (UTC)
+Received: from unknown (HELO webmail) (203.0.113.45)
+        by mail-relay-3.hostingprovider.net with SMTP; Wed, 24 Sep 2025 09:11:59 +0000
+X-Originating-IP: [203.0.113.45]
+From: "American Express" <security@american-verify.com>
+Reply-To: support@american-verify.com
+To: user@example.com
+Subject: Confirm your recent card request
+Date: Wed, 24 Sep 2025 09:11:58 +0000
+Message-ID: <20250924091158.12345@mail-relay-3.hostingprovider.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_12345_67890"
+Authentication-Results: mx.yourmail.com;
+    spf=fail (sender IP is 45.77.88.12) smtp.mailfrom=american-verify.com;
+    dkim=none (message not signed);
+    dmarc=fail (p=reject) header.from=american-verify.com
+Received-SPF: fail (mail from amer-verify.com does not designate 45.77.88.12 as permitted sender)
+X-Mailer: PHPMailer 6.5.1
+X-Spam-Status: Yes, score=7.3 required=5.0
+    tests=[SPF_FAIL,HELO_DYNAMIC_IPADDR,FROM_NO_DN,HTML_IMAGE_ONLY_20]
+X-Spam-Report: *
+    - SPF check: fail
+    - DKIM: no signature
+    - DMARC: header.from domain mismatch
+List-Unsubscribe: <mailto:unsubscribe@american-verify.com>
+--boundary--
+Content-Transfer-Encoding: quoted-printable
+<html> ... (email HTML with links)
+<a href="https://american-secure-login.com/confirm?token=ABCD1234">Confirm Request</a>
+</html>
+--boundary--
