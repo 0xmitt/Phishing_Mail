@@ -1,0 +1,25 @@
+nterview Questions — concise answers
+
+1. What is phishing?
+Phishing is a social-engineering attack where attackers send fraudulent messages (usually email) designed to trick recipients into revealing sensitive information (passwords, financial data) or installing malware.
+
+2. How to identify a phishing email?
+Look for mismatched sender domains, SPF/DKIM/DMARC failures, suspicious links or attachments, urgent language, poor grammar, unexpected requests for credentials, and header anomalies.
+
+3. What is email spoofing?
+Email spoofing is forging email headers so the message appears to come from a different sender (often a trusted brand) — commonly done by changing the display name, the From address, or manipulating Return-Path. Authentication failures (SPF/DKIM/DMARC) help detect spoofing.
+
+4. Why are phishing emails dangerous?
+They can steal credentials, cause financial loss, install malware/ransomware, provide attackers with network access, and enable account takeover or identity theft.
+
+5. How can you verify the sender’s authenticity?
+Check the full email address, inspect raw headers (Return-Path, Received chain), confirm SPF/DKIM/DMARC results, compare sending IP to known provider ranges, and contact the sender via an independent channel (official website/phone).
+
+6. What tools can analyze email headers?
+Online header analyzers, SPF/DKIM/DMARC checking tools, VirusTotal/URLScan for links, and enterprise SOC tools (PhishTool, MISP). Mail server logs and forensic tools are used in investigations.
+
+7. What actions should be taken on suspected phishing emails?
+Do not interact; report them; quarantine/delete the message; change credentials and enable MFA if you clicked a link; scan endpoints; notify IT/security teams.
+
+8. How do attackers use social engineering in phishing?
+They exploit human traits (fear, curiosity, urgency, helpfulness) by crafting believable stories (billing issues, password resets, prize notifications) and impersonating trusted sources to get victims to act without critical inspection.
