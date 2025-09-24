@@ -71,7 +71,7 @@ Identify phishing characteristics in a suspicious American Express email sample 
 ## Screenshots
 
 ### American Express Phishing Email
-![American Express Phishing Email](Images/amex_phishing_email.png)  
+![American Express Phishing Email](amex_phishing_email.png)  
 
 ### Email Header Analysis
-![Email Header Analysis](Images/email_header.txt)  
+![Email Header Analysis](email_header.txt)  
